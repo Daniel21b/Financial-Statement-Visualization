@@ -5,21 +5,21 @@ const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 
 const app = express();
-const port = 5001;
+const port = process.env.PORT || 5001;
 
 // Use Helmet to set security headers
 app.use(helmet());
 
 // Use the CORS middleware with specific configuration
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://financial-statement-visualization-1.onrender.com', // Frontend URL on Render
 }));
 
 // Set CSP headers
 app.use((req, res, next) => {
   res.setHeader(
     "Content-Security-Policy",
-    "default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' http://localhost:5001"
+    "default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://financial-statement-visualization-1.onrender.com https://financial-statement-visualization.onrender.com" // Include both frontend and backend URLs
   );
   next();
 });
