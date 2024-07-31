@@ -15,32 +15,6 @@ This project is a financial statement visualization tool that fetches financial 
 - [Usage](#usage)
 - [License](#license)
 
-## Project Structure
-
-financial-statement-visualization/
-│
-├── backend/
-│ ├── server.js
-│ ├── package.json
-│ └── package-lock.json
-│
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── Button.js
-│ │ │ ├── Card.js
-│ │ │ ├── CardContent.js
-│ │ │ ├── FinVueAnalysis.js
-│ │ │ └── Select.js
-│ │ ├── index.css
-│ │ ├── index.js
-│ │ └── App.js
-│ ├── public/
-│ ├── package.json
-│ ├── package-lock.json
-│ └── .env
-│
-└── README.md
 
 markdown
 
@@ -145,7 +119,3 @@ License
 
 This project is licensed under the MIT License.
 
-vbnet
-
-
-This README provides a comprehensive guide for setting up, deploying, and using yo
