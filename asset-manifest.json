@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Financial-Statement-Visualization/static/css/main.f2540169.css",
-    "main.js": "/Financial-Statement-Visualization/static/js/main.c04fd730.js",
-    "static/js/453.1e0dd0bc.chunk.js": "/Financial-Statement-Visualization/static/js/453.1e0dd0bc.chunk.js",
+    "main.js": "/Financial-Statement-Visualization/static/js/main.bd9a636f.js",
+    "static/js/453.f11c945d.chunk.js": "/Financial-Statement-Visualization/static/js/453.f11c945d.chunk.js",
     "index.html": "/Financial-Statement-Visualization/index.html",
     "main.f2540169.css.map": "/Financial-Statement-Visualization/static/css/main.f2540169.css.map",
-    "main.c04fd730.js.map": "/Financial-Statement-Visualization/static/js/main.c04fd730.js.map",
-    "453.1e0dd0bc.chunk.js.map": "/Financial-Statement-Visualization/static/js/453.1e0dd0bc.chunk.js.map"
+    "main.bd9a636f.js.map": "/Financial-Statement-Visualization/static/js/main.bd9a636f.js.map",
+    "453.f11c945d.chunk.js.map": "/Financial-Statement-Visualization/static/js/453.f11c945d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f2540169.css",
-    "static/js/main.c04fd730.js"
+    "static/js/main.bd9a636f.js"
   ]
 }
