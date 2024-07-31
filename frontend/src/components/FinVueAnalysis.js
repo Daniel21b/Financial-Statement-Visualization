@@ -9,6 +9,8 @@ import axios from 'axios';
 import pLimit from 'p-limit';
 import './FinVueAnalysis.css';
 
+const API_BASE_URL = "https://financial-statement-visualization.onrender.com"; // Backend URL on Render
+
 const financialMetrics = {
   assets: "Assets",
   liabilities: "Liabilities",
@@ -33,9 +35,7 @@ const FinVueAnalysis = () => {
     const fetchCompanies = async () => {
       try {
         setLoading(true);
-        const companyTickersResponse = await axios.get(
-          "http://localhost:5001/api/company-tickers"
-        );
+        const companyTickersResponse = await axios.get(`${API_BASE_URL}/api/company-tickers`);
         const companyDataArray = Object.values(companyTickersResponse.data);
         setCompanyList(companyDataArray);
         setSelectedCompanies([companyDataArray[0]]);
@@ -63,9 +63,7 @@ const FinVueAnalysis = () => {
           limit(async () => {
             try {
               console.log(`Fetching data for ${company.ticker}, metric: ${value}`);
-              const response = await axios.get(
-                `http://localhost:5001/api/company-concept/${cik}/${value}`
-              );
+              const response = await axios.get(`${API_BASE_URL}/api/company-concept/${cik}/${value}`);
 
               const data = response.data.units.USD;
               const tenKData = data.filter(item => item.form === '10-K').sort((a, b) => new Date(a.end) - new Date(b.end));
